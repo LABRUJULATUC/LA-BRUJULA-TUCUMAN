@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a0a;
+  color: #f1f1f1;
+}
+
+header {
+  background-color: #111;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 2px solid #b30000;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 2em;
+}
+
+.subtitle {
+  color: #ccc;
+  margin: 5px 0 10px;
+  font-size: 1em;
+}
+
+.live-btn {
+  background-color: #b30000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.live-btn:hover {
+  background-color: #ff1a1a;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 5px 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff1a1a;
+}
+
+.main-news {
+  position: relative;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.main-news img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  padding: 20px;
+}
+
+.news-text h2 {
+  margin: 0;
+  color: #ff1a1a;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.news-grid article {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.news-grid article:hover {
+  transform: scale(1.02);
+}
+
+.news-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-grid h3 {
+  color: #ff1a1a;
+  margin: 10px;
+}
+
+.news-grid p {
+  margin: 0 10px 15px;
+  color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  border-top: 2px solid #b30000;
+  color: #bbb;
+  font-size: 0.9em;
+}
+
+footer em {
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .news-text h2 {
+    font-size: 1.2em;
+  }
+}
